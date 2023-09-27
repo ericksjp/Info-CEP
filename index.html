@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos CEP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Info CEP</h1>
+            <button id="modal-button">contato</button>
+        </nav>
+    </header>
+    <main>
+        <section id="form-section">
+            <div class="input-camps">
+                <form name="newAddress">
+                    <div class="input-camp">
+                        <label for="cep"></label>
+                        <input name="cep" id="cep" type="text" placeholder="CEP">
+                        <p id="invalidCEP-Error">Informe um CEP válido</p>
+                    </div>
+                    <div class="input-camp">
+                        <label for="cidade"></label>
+                        <input name="cidade" id="cidade" type="text" placeholder="CIDADE" disabled>
+                    </div>
+                    <div class="input-camp">
+                        <label for="street"></label>
+                        <input name="street" id="street" type="text" placeholder="LOGRADOURO" disabled>
+                    </div>
+                    <div class="input-camp">
+                        <label for="bairro"></label>
+                        <input name="bairro" id="bairro" type="text" placeholder="BAIRRO" disabled>
+                    </div>
+                    <div class="input-camp">
+                        <label for="UF"></label>
+                        <input name="UF" id="UF" type="text" placeholder="UF" disabled>
+                    </div>
+                    <div class="input-camp">
+                        <label for="DDD"></label>
+                        <input name="DDD" id="DDD" type="text" placeholder="DDD" disabled>
+                    </div>
+                    <div class="input-camp">
+                        <label for="numero"></label>
+                        <input name="numero" id="numero" type="text" placeholder="NÚMERO" disabled>
+                    </div>
+
+                    <div id="button-div">
+                        <button id="submit-btn" type="submit" disabled>Salvar</button>
+                        <button id="clean-btn">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="list-section">
+        </section>
+    </main>
+
+    <section id="modal-container" class="modal-container">
+        <div class="modal-box">
+            <div>
+                <a href="https://github.com/ericksjp" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+                    <strong>GitHub: ericksjp</strong>
+                </a>
+            </div>
+            <button id="close-modal">Fechar</button>
+        </div>
+
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

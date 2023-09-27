@@ -1,0 +1,209 @@
+@import 'modal.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  background-color: #000;
+}
+
+header {
+  background-color: #5fc24b;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > nav {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+header > nav > div {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+h1 {
+  color: white;
+  width: 169px;
+  height: 49px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+}
+
+main {
+  margin: 35px auto 35px auto;
+  height: fit-content;
+  width: 90%;
+}
+
+#form-section {
+  background-color: #333333;
+  max-width: 600px;
+  max-height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 8px;
+}
+
+#invalidCEP-Error {
+  display: none;
+  color: red;
+  font-weight: 530;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+input {
+  border-radius: 4px;
+  width: 560px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 10px;
+  border: none;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #5fc24b;
+}
+
+input:disabled {
+  background-color: #cfcfcf;
+  color: #000;
+}
+
+#button-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  width: 250px;
+  height: 50px;
+  top: 420px;
+  left: 630px;
+  border-radius: 4px;
+  background-color: #5fc24b;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #90d882;
+}
+
+button:disabled {
+  cursor:not-allowed;
+  background-color: #5d8b53;
+}
+
+#list-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+#list-section > div {
+  border: 1px solid #fff;
+  padding: 20px;
+  padding-top: 15px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  background-color: #333333;
+}
+
+#list-section > div > h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #5fc24b;
+}
+
+#list-section > div > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: none;
+}
+
+#list-section > div > ul > li {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(194, 194, 194);
+}
+
+#list-section > div > ul > li > strong {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 680px) {
+  #form-section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .input-camps,
+  #newAddress,
+  .input-camp,
+  input {
+    width: 100%;
+  }
+
+  #button-div {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  #button-div > button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  input {
+    font-size: 1rem;
+  }
+}
